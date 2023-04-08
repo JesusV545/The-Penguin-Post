@@ -1,0 +1,22 @@
+{{> posts-info post}}
+
+{{#if loggedIn}}
+<div class="bg-white shadow-lg rounded-lg">
+    <h3 class="text-xl font-bold py-4 px-6 text-gray-700">Comment</h3>
+    <form class="p-6 comment-form" id="comment-form">
+
+        <div class="mb-4">
+            <label class="block text-gray-700 font-bold mb-2" for="comment">Comment</label>
+            <input id="comment" name="comment-body" class="form-input" />
+        </div>
+
+        <button type="submit" class="px-4 py-2 rounded-lg bg-blue-500 text-white hover:bg-blue-700 focus:outline-none focus:shadow-outline-blue">Submit</button>
+    </form>
+</div>
+{{/if}}
+
+{{> comments post.comments}}
+
+{{#if loggedIn}}
+<script src="../public/js/comment.js"></script>
+{{/if}}

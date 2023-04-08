@@ -1,0 +1,13 @@
+<div class="bg-white rounded-lg shadow-md">
+    <div class="px-4 py-3 border-b border-gray-200">
+        <h4 class="text-lg font-medium">
+            <a class="text-blue-500 hover:underline" href="/post/{{id}}">{{title}}</a>
+        </h4>
+        <p class="text-sm text-gray-500 mt-1">
+            Posted by {{user.username}} on {{format_date created_at}}
+        </p>
+    </div>
+    <div class="px-4 py-3">
+        <p class="text-gray-700">{{content}}</p>
+    </div>
+</div>

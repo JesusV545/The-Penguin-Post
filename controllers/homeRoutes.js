@@ -28,7 +28,10 @@ router.get('/', async (req, res) => {
         ]
       });
       const posts = postData.map(post => post.get({ plain: true }));
-      res.render('homepage', { posts, loggedIn: req.session.loggedIn });
+      res.render('homepage', { 
+        posts, 
+        loggedIn: req.session.loggedIn
+       });       
     } catch (err) {
       console.log(err);
       res.status(500).json(err);
@@ -44,10 +47,10 @@ router.get('/login', (req, res) => {
     res.render('login');
 });
 
-//need to create a route that reroutes to the signup page
-router.get('/signup', (req, res) => {
-    res.render('signup');
-});
+//need to create a route that reroutes to the signup page    //combined the login and sign up page 
+// router.get('/signup', (req, res) => {
+//     res.render('signup');
+// });
 
 //need to create a route that reroutes a single post page
 router.get('/post/:id', async (req, res) => {

@@ -1,0 +1,22 @@
+<div class="bg-white shadow-lg rounded-lg">
+  <h3 class="text-xl font-bold py-4 px-6 text-gray-700">Edit Post</h3>
+  <form class="p-6 edit-post-form">
+    <div class="mb-4">
+      <label for="post-title" class="block text-gray-700 font-bold mb-2">Title</label>
+      <input name="post-title" type="text" value="{{post.title}}" class="form-input" />
+    </div>
+
+    <div class="mb-6">
+      <label class="block text-gray-700 font-bold mb-2" for="content">Content</label>
+      <input name="content" type="text" value="{{post.content}}" class="form-input" />
+    </div>
+
+    <div class="flex justify-between">
+      <button type="submit" class="px-4 py-2 rounded-lg bg-blue-500 text-white hover:bg-blue-700 focus:outline-none focus:shadow-outline-blue">Update Post</button>
+      <button type="button" class="px-4 py-2 rounded-lg bg-red-500 text-white hover:bg-red-700 focus:outline-none focus:shadow-outline-red delete-post-btn">Delete Post</button>
+    </div>
+  </form>
+</div>
+
+<script src="../public/js/edit-post.js"></script>
+<script src="../public/js/delete-post.js"></script>
