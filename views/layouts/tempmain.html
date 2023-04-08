@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Penguin Post</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div>
+    <nav class="bg-gray-800 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+        <a class="text-xl text-white font-semibold" href="#">Penguin Post</a>
+        <div class="flex items-center">
+            <a class="text-gray-400 hover:text-white mr-4" href="../dashboard.handlebars">Dashboard</a>
+            <a class="text-gray-400 hover:text-white mr-4" href="../homepage.handlebars">Home</a>
+            {{#if logged_in}}
+            <a class="text-gray-400 hover:text-white mr-4" href="../homepage.handlebars">Logout</a>
+            {{else}}
+            <a href="/login">login</a>
+            {{/if}}
+        </div>
+        </div>
+    </nav>
+
+    <main class="container mx-auto my-8 px-4 bg-gray-100">
+  
+      </main>
+      
+
+    <footer class="bg-grey-800 p-4">
+        <div class="container mx-auto flex justify-center items-center">
+            <div>
+                <a href="">Github</a>
+                <a href=""></a>
+                <a href=""></a>
+            </div>
+        </div>
+    </footer>
+  </div>
+
+
+
+  <script src="../../public/js/logout.js"></script>
+ 
+</body>
+
+</html>
