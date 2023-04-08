@@ -11,15 +11,15 @@
 <body>
   <nav class="bg-gray-800 p-4">
       <div class="container mx-auto flex justify-between items-center">
-      <a class="text-xl text-white font-semibold" href="#">Penguin Post</a>
+      <a class="text-xl text-white font-semibold" href="/">Penguin Post</a>
       <div class="flex items-center">
           <a class="text-gray-400 hover:text-white mr-4" href="/dashboard">Dashboard</a>
           <a class="text-gray-400 hover:text-white mr-4" href="/">Home</a>
 
-          {{#if logged_in}}
-          <a class="text-gray-400 hover:text-white" href="/homepage">Logout</a>
+          {{#if loggedIn}}
+          <a id="logout-btn" class="text-gray-400 hover:text-white" href="/homepage">Logout</a>
           {{else}}
-          <a href="/login">Login</a>
+          <a class="text-gray-400 hover:text-white mr-4" href="/login">Login</a>
           {{/if}}
 
       </div>
@@ -35,9 +35,13 @@
   </footer>
 
 
-  {{#if logged_in}}
-  <script src="../../public/js/logout.js"></script>
+  {{#if loggedIn}}
+    <script src="/js/logout.js"></script>
+  {{else}}
+    <script src="/js/login.js"></script>
   {{/if}}
+
+
 </body>
 
 </html>
