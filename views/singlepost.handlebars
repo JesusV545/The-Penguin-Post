@@ -1,22 +1,21 @@
 {{> posts-info post}}
 
 {{#if loggedIn}}
-<div class="bg-white shadow-lg rounded-lg">
-    <h3 class="text-xl font-bold py-4 px-6 text-gray-700">Comment</h3>
-    <form class="p-6 comment-form" id="comment-form">
+<div class="card">
+    <h3 class="card-header"></h3>
+    <form class="card-body comment-form" id="comment-form">
 
-        <div class="mb-4">
-            <label class="block text-gray-700 font-bold mb-2" for="comment">Comment</label>
-            <input id="comment" name="comment-body" class="form-input" />
-        </div>
+        <label for="comment" class="block font-medium text-gray-700 mb-2">Comment</label>
+        <input id="comment" name="comment-body" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" />
 
-        <button type="submit" class="px-4 py-2 rounded-lg bg-blue-500 text-white hover:bg-blue-700 focus:outline-none focus:shadow-outline-blue">Submit</button>
+        <button type="submit" class="mt-4 inline-block bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-700 focus:outline-none focus:shadow-outline">Submit</button>
     </form>
 </div>
 {{/if}}
 
+
 {{> comments post.comments}}
 
 {{#if loggedIn}}
-<script src="../public/js/comment.js"></script>
+<script src="/jv/comment.js"></script>
 {{/if}}
