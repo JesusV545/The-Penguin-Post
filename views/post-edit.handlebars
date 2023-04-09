@@ -12,11 +12,10 @@
     </div>
 
     <div class="flex justify-between">
-      <button type="submit" class="px-4 py-2 rounded-lg bg-blue-500 text-white hover:bg-blue-700 focus:outline-none focus:shadow-outline-blue">Update Post</button>
-      <button type="button" class="px-4 py-2 rounded-lg bg-red-500 text-white hover:bg-red-700 focus:outline-none focus:shadow-outline-red delete-post-btn">Delete Post</button>
+      <button type="submit" id="edit-btn" data-id="{{post.id}}" class="px-4 py-2 rounded-lg bg-blue-500 text-white hover:bg-blue-700 focus:outline-none focus:shadow-outline-blue">Update Post</button>
+      <button type="button" id="delete-btn" data-id="{{post.id}}" class="px-4 py-2 rounded-lg bg-red-500 text-white hover:bg-red-700 focus:outline-none focus:shadow-outline-red delete-post-btn">Delete Post</button>
     </div>
   </form>
 </div>
 
-<script src="../public/js/edit-post.js"></script>
-<script src="../public/js/delete-post.js"></script>
+<script src="/js/add-delete-edit-post.js"></script>
