@@ -1,13 +1,11 @@
-const addCommentBtn =  document.getElementById('');
+const addCommentBtn =  document.getElementById('comment-form');
 
 async function addComment(e) {
     e.preventDefault();
 
     const comment_text = document.getElementById('comment').value.trim();
   
-    const post_id = window.location.toString().split('/')[
-      window.location.toString().split('/').length - 1
-    ];
+    const post_id = window.location.pathname.split('/').pop();
   
     // If there is a comment -- preventing from users submitting empty comments 
     if (comment_text) {
@@ -32,4 +30,4 @@ async function addComment(e) {
 
 
 
-addCommentBtn.addEventListener('click', addComment);
+addCommentBtn.addEventListener('submit', addComment);
