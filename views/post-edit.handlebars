@@ -1,21 +1,24 @@
 <div class="bg-white shadow-lg rounded-lg">
   <h3 class="text-xl font-bold py-4 px-6 text-gray-700">Edit Post</h3>
-  <form class="p-6 edit-post-form">
+  <form class="p-6" id="edit-post-form">
     <div class="mb-4">
       <label for="post-title" class="block text-gray-700 font-bold mb-2">Title</label>
-      <input name="post-title" type="text" value="{{post.title}}" class="form-input" />
+      <input name="post-title" id="new-title" type="text" value="{{post.title}}" class="form-input shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" />
     </div>
 
     <div class="mb-6">
       <label class="block text-gray-700 font-bold mb-2" for="content">Content</label>
-      <input name="content" type="text" value="{{post.content}}" class="form-input" />
+      <input name="content" id="new-content" type="text" value="{{post.content}}" class="form-input shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" />
     </div>
 
     <div class="flex justify-between">
-      <button type="submit" id="edit-btn" data-id="{{post.id}}" class="px-4 py-2 rounded-lg bg-blue-500 text-white hover:bg-blue-700 focus:outline-none focus:shadow-outline-blue">Update Post</button>
-      <button type="button" id="delete-btn" data-id="{{post.id}}" class="px-4 py-2 rounded-lg bg-red-500 text-white hover:bg-red-700 focus:outline-none focus:shadow-outline-red delete-post-btn">Delete Post</button>
+      <button type="submit"  class="px-4 py-2 rounded-lg bg-blue-500 text-white hover:bg-blue-700 focus:outline-none focus:shadow-outline-blue">Update Post</button>
+      <button type="button" id="delete-btn" class="px-4 py-2 rounded-lg bg-red-500 text-white hover:bg-red-700 focus:outline-none focus:shadow-outline-red">Delete Post</button>
     </div>
   </form>
+
+
 </div>
 
-<script src="/js/add-delete-edit-post.js"></script>
+  <script src="/js/post-edit.js"></script>
+  <script src="/js/delete-post.js"></script>

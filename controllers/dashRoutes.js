@@ -5,6 +5,7 @@ const withAuth = require('../utils/auth');
 
 router.get('/', withAuth, async (req, res) => {
     try {
+      console.log(8)
       const postData = await Post.findAll({
         where: {
           // use the ID from the session
