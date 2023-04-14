@@ -20,7 +20,7 @@ Once the code is loaded up, open up the intergrated terminal and run the command
     "express-handlebars": "^5.2.0",
     "express-session": "^1.17.1",
     "mysql2": "^2.2.5",
-   "sequelize": "^6.3.5"
+    "sequelize": "^6.3.5",
 
 ### Links
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
