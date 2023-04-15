@@ -1,4 +1,5 @@
-# The Penguin Post
+# The Penguin Post [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 
 ## Description
 This application is a simple blogging post that allows the user to navigate different posts, create posts, update posts, delete posts, or even comment on other posts created by other users. However, before the user can create, delete, or comment on other posts they must create an account to utilize sessions. This application, is interactive and has a easy-to-read user interface that allows the user to navigate through several different parts of the website. 
@@ -23,7 +24,7 @@ Once the code is loaded up, open up the intergrated terminal and run the command
     "sequelize": "^6.3.5",
 
 ### Links
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+https://the-penguin-post.herokuapp.com/
 
 #### Developer's Note
 This application is in continous developement.
